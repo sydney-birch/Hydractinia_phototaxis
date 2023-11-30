@@ -340,26 +340,3 @@ winners_R2 = ['STG_1_DP-18.R2', 'STG_2_DP-20.R2', 'STG_4_DP-28.R2', 'STG_3_DP-26
 * stg_5.fa 
 * stg_6.fa   
 
-##### C. Run Interproscan, Pull out GO terms, and visualize in ReviGO
- Now that we have our FASTAs of the siginificantly upregulated DEGs for stages 5 & 6, we can run interproscan on both stages to get GO terms. Run interproscan on stage 5 and 6.   
- `sbatch 11.C.1_interpro_stg_5.slurm`    
- `sbatch 11.C.1_interpro_stg_6_slurm`    
- 
- Code in scripts:  
- `interproscan -i ./stg_5.fa -d ./interpro_stg_5 -goterms -f TSV`   
- `interproscan -i ./stg_6.fa -d ./interpro_stg_6 -goterms -f TSV` 
- 
- Outputs: 
-* stg_5.fa.tsv
-* stg_6.fa.tsv
- 
- Next, we need to pull out the GO terms from the tsv file so we can copy the GO terms into ReviGo.  
- `./11.C.2_make_annotations_file.py -i stg_5.fa.tsv`     
- `./11.C.2_make_annotations_file.py -i stg_6.fa.tsv`   
- 
- Outputs: 
-* annotations.txt (rename for each stage)  
-*For each output file - open it in a text editor. Remove the headers/copy all of the GO terms and paste in a new document - organize them so there is 1 GO term per line - call this new file stg_5_GOs.txt and stg_6_GOs.txt*  
- 
- Now that you have all of the GO terms, organized one per line - copy and paste them into ReviGo to visualize functions http://revigo.irb.hr/ 
-
