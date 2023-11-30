@@ -31,7 +31,7 @@ CNGA3;CNGB3	OG0001196
 A. Open the Rmd scripts for the geneset of interest and go through the script until line 146.
 B. Open the actinula_acc_apo_OGs_acc_sym dataframe and search the OG of interest
 C. For each OG, write out the full hydractinia sequence header which contains the sequence location - we will need that later in Step 7.
-
+```
 Hs_planula_t.11713..435-1	CRX;VSX1;VSX2;RAX2	OG0000012 
 Hs_planula_t.14852..1060-236	CRX;VSX1;VSX2;RAX2	OG0000012 
 Hs_planula_t.20655..3-353	CRX;VSX1;VSX2;RAX2	OG0000012 
@@ -58,7 +58,7 @@ Hs_planula_t.88569..1379-489	RRH;OPN5;RHO;OPN4	OG0000063
 
 Hs_planula_t.15325..1-420	CNGA3;CNGB3	OG0001196
 Hs_planula_t.35573..756-3677	CNGA3;CNGB3	OG0001196
-
+```
 
 ### 4. Make a CSV of gene expression values for sequences of interest
 In the terminal, make a probes directory where you can easily navigate to your salmon dir from the transcriptome analysis.
@@ -179,10 +179,10 @@ Now that you have a fasta file of nucleotide sequences of your exact region for 
 3. This will generate a probe set. Stellaris recommends a minimum of 25 oligos for a single probe set. If the count number is too low, alter the length and min spacing length according to their recomendations for troubleshooting/designing: https://blog.biosearchtech.com/considerations-for-optimizing-stellaris-rna-fish-probe-design.
 4. Next, select your stellaris dye and order! Check out https://www.biosearchtech.com/support/education/stellaris-rna-fish/dyes-and-modifications-for-stellaris.
 You wll go through this with all of your potential sequences and choose the best probe set to order for each OG, we chose:
-
+```
 >Hs_planula_t.47300..1369-698_(-)_CRXs_A	45% GC	672bp 	Hsym_CRXs_A; 25 probes; Quasar 670; 5nmol 
 >Hs_planula_t.88569..1379-489_(-)_OPNs_A	38% GC	891bp	Hsym_OPNs_A; 33 probes; C3-Fluorescein; 5nmol
 >Hs_planula_t.35573..756-3677_(+)_CNGA3		40% GC	2922bp 	Hsym_CNG; 48 probes; Tamara c9; 5nmol 
-
+```
 
 You have now completed the RNA FISH Probe Design!!
