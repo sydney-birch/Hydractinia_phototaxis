@@ -174,16 +174,15 @@ Save this fasta file on your local computer and open it with a sequence viewer, 
 ### 8. Design probes in stellaris and order
 Now that you have a fasta file of nucleotide sequences of your exact region for probes, we are going to make a custom probeset using Stellaris: https://www.biosearchtech.com/products/rna-fish/custom-stellaris-probe-sets. I recommend reading over the design information provided by stellaris.
 
-Select the Stellaris rna fish probe designer option and start design.
-Enter in the name of your probe set name, for organism select other, masking level change to 2, Max number of probes keep at 48. For the first test keep oligo length at 20 and min spacing length (nt) at 2 - alter these according to the recomendations depending on the number of probes generated. Next, paste in your target sequence and click design probes.
-This will generate a probe set. Stellaris recommends a minimum of 25 oligos for a single probe set. If the count number is too low, alter the length and min spacing length according to their recomendations for troubleshooting/designing: https://blog.biosearchtech.com/considerations-for-optimizing-stellaris-rna-fish-probe-design.
-Next, select your stellaris dye and order! Check out https://www.biosearchtech.com/support/education/stellaris-rna-fish/dyes-and-modifications-for-stellaris.
+1. Select the Stellaris rna fish probe designer option and start design.
+2. Enter in the name of your probe set name, for organism select other, masking level change to 2, Max number of probes keep at 48. For the first test keep oligo length at 20 and min spacing length (nt) at 2 - alter these according to the recomendations depending on the number of probes generated. Next, paste in your target sequence and click design probes.
+3. This will generate a probe set. Stellaris recommends a minimum of 25 oligos for a single probe set. If the count number is too low, alter the length and min spacing length according to their recomendations for troubleshooting/designing: https://blog.biosearchtech.com/considerations-for-optimizing-stellaris-rna-fish-probe-design.
+4. Next, select your stellaris dye and order! Check out https://www.biosearchtech.com/support/education/stellaris-rna-fish/dyes-and-modifications-for-stellaris.
 You wll go through this with all of your potential sequences and choose the best probe set to order for each OG, we chose:
 
->Ec_actinula_t.72976..146-1048(+)_opsin_C		903bp 	48% GC	actinula_opsin_C; 34 probes; C3-Fluorescein; 5nmol 
->Ec_actinula_t.17544..7629-1057_(-)_Piezo		6573bp 	46% GC	Actinula_Piezo; 48 probes; Quasar 670; 5 nmol total: 782.20 (NOTE: I Used the - strand (says to use sense strand))
->Ec_actinula_t.81080..203-2761_(+)_PKD2L1_A		2559bp 	48% GC	Actinula_PKD2L1_A; 48 probes; Tamara c9; 5nmol 
->Ec_actinula_t.66208..2940-1282_(-)_PKD1L3_A 		1659bp 	45% GC	Actinula_PKD1L3_A; 48 probes; Tamara C9; 5nol (NOTE: I used the - strand )
->Ec_actinula_t.66269..63-3458_(+)_TRPA_A		3396bp 	46% GC	Actinula_TRPA_A; 48 probes; Quasar 670; 5nmol 
+>Hs_planula_t.47300..1369-698_(-)_CRXs_A	45% GC	672bp 	Hsym_CRXs_A; 25 probes; Quasar 670; 5nmol 
+>Hs_planula_t.88569..1379-489_(-)_OPNs_A	38% GC	891bp	Hsym_OPNs_A; 33 probes; C3-Fluorescein; 5nmol
+>Hs_planula_t.35573..756-3677_(+)_CNGA3		40% GC	2922bp 	Hsym_CNG; 48 probes; Tamara c9; 5nmol 
+
 
 You have now completed the RNA FISH Probe Design!!
