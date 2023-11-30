@@ -151,29 +151,27 @@ Hs_planula_t.15325..1-420	STG_2	0.9 - 0.0		Select seq ref|XP_012555744.1|	PREDIC
 Next, we will pull out the sequences across all OGs that we are interested in making probes for.
 
 First, make a header file of all the headers you want to pull sequences out call it: nano actinula_headers_for_probes
-Copy all headers of interest into the actinula_headers_for_probes file:
+Copy all headers of interest into the hydractinia_expression_headers  file:
 
-#actinula_headers_for_probes file should look like this: 
-Ec_actinula_t.97788
-Ec_actinula_t.28006
-Ec_actinula_t.72976
-Ec_actinula_t.17544
-Ec_actinula_t.81080
-Ec_actinula_t.82249
-Ec_actinula_t.66208
-Ec_actinula_t.66269
-Ec_actinula_t.84956 
+#hydractinia_expression_headers  file should look like this: 
+#CRXs
+Hs_planula_t.47300..1369-698
+Hs_planula_t.85107..1378-566
+#OPNs	
+Hs_planula_t.88569..1379-489
+Hs_planula_t.29380..1208-315
+#CNGA3
+Hs_planula_t.35573..756-3677
 
 Next, run selectSeqs.pl to get all of the fasta nuc seqs for these headers. You will give this script the headers file, the transcriptome fasta, and the output file name:
 
-	./selectSeqs.pl -f actinula_headers_for_probes ./actinula_total.ORP.fa-mod.fa >> actinula_highest_expression_sensory_seqs_for_probes.fa
+	./selectSeqs.pl -f hydractinia_expression_headers ./hydractinia_total.ORP.fasta-mod.fa >> hydractinia_highest_expression_sensory_seqs.fa
+ 
+Save this fasta file on your local computer and open it with a sequence viewer, here I use the free version of SnapGene. In SnapGene, each header will have its own page, go through each one, click on the translation option which shows the reading frame, and copy the specified sequence region from the location portion of the protien header. This will be the exact sequence you use to make probes.
 
-Save this fasta file on your local computer and open it with a sequence viewer, here I use the free version of SnapGene. In SnapGene, each header will have its own page, go through each one, click on the translation option which shows tthe reading frame, and copy tthe specified sequence region from the location portion of the protien header. This will be the exact sequence you use to make probes.
+- Take note of the bp and GC content in your notes file. You will do this for each of your sequences.
 
-For example:
-The protien header for a potential opsin sequence is Ec_actinula_t.97788..1291-986_(-). Open the Ec_actinula_t.97788 tab in snapgene and go to the sequence location of 1291-986 and copy that range and paste into a new text document that will contain all probe sequences (called exact_nuc_seqs_for_probes.fa). Take note of the bp and GC content in your notes file. You will do this for each of your sequences.
-
-8. Design probes in stellaris and order
+### 8. Design probes in stellaris and order
 Now that you have a fasta file of nucleotide sequences of your exact region for probes, we are going to make a custom probeset using Stellaris: https://www.biosearchtech.com/products/rna-fish/custom-stellaris-probe-sets. I recommend reading over the design information provided by stellaris.
 
 Select the Stellaris rna fish probe designer option and start design.
