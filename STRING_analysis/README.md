@@ -1,8 +1,9 @@
-### STRING analysis 
+## STRING analysis 
 
 We performed a STRING analysis using the STRING database (https://string-db.org/cgi/input?sessionId=bo0WKz2Soxv3) to investigate the protien-protien interactions of the candidate Hydractinia planlua genes. We examined this by using the human gene symbols that labled orthogroups (from OrthoFinder) that contained Hydractinia sequences. The spreadsheet organizes all of the gene symbols and includes the significantly differentially expressed genes (for each developmental day and combined), the Full gene set, the genes that are expressed (but not significantly differentially expressed), and the genes that are not expressed (orthogroups that did not contain Hydractinia sequences). Below is the step-by-step guide for the settings and the analysis. 
 
-#### Step-by-Step Analysis and Settings
+
+### Step-by-Step Analysis and Settings
 
 1. We copied the genes of interest and searched them in the database under the multiple protiens tab and selected Human as the organism. 
 
@@ -16,5 +17,5 @@ We performed a STRING analysis using the STRING database (https://string-db.org/
 
 4. Export as an SVG
 
-### **Permanent links for each Network Generated can be found in the spreadsheet.**
+### _**Permanent links for each Network Generated can be found in the spreadsheet.**_
   
