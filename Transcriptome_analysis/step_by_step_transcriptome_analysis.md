@@ -43,18 +43,18 @@ winners_R2 = ['STG_1_DP-18.R2', 'STG_2_DP-20.R2', 'STG_4_DP-28.R2', 'STG_3_DP-26
 
    Output Quality Metrics for the assembly:  
    
-   *****  QUALITY REPORT FOR: hydractinia_total using the ORP version 2.2.8 ****
-   *****  THE ASSEMBLY CAN BE FOUND HERE: /mnt/oldhome/plachetzki/sjb1061/hydractinia_transcriptomics/ORP/assemblies/hydractinia_total.ORP.fasta **** 
+    QUALITY REPORT FOR: hydractinia_total using the ORP version 2.2.8
+    THE ASSEMBLY CAN BE FOUND HERE: /mnt/oldhome/plachetzki/sjb1061/hydractinia_transcriptomics/ORP/assemblies/hydractinia_total.ORP.fasta 
 
-   *****  BUSCO SCORE ~~~~~~~~~~~~~~~~~~~~~~>      C:100.0%[S:48.2%,D:51.8%],F:0.0%,M:0.0%,n:303
-   *****  TRANSRATE SCORE ~~~~~~~~~~~~~~~~~~>      0.39257
-   *****  TRANSRATE OPTIMAL SCORE ~~~~~~~~~~>      0.444
-   *****  UNIQUE GENES ORP ~~~~~~~~~~~~~~~~~>      13186
-   *****  UNIQUE GENES TRINITY ~~~~~~~~~~~~~>      11449
-   *****  UNIQUE GENES SPADES55 ~~~~~~~~~~~~>      12060
-   *****  UNIQUE GENES SPADES75 ~~~~~~~~~~~~>      10900
-   *****  UNIQUE GENES TRANSABYSS ~~~~~~~~~~>      11098
-   *****  READS MAPPED AS PROPER PAIRS ~~~~~>      93.87% 	
+    BUSCO SCORE ~~~~~~~~~~~~~~~~~~~~~~>      C:100.0%[S:48.2%,D:51.8%],F:0.0%,M:0.0%,n:303
+    TRANSRATE SCORE ~~~~~~~~~~~~~~~~~~>      0.39257
+    TRANSRATE OPTIMAL SCORE ~~~~~~~~~~>      0.444
+    UNIQUE GENES ORP ~~~~~~~~~~~~~~~~~>      13186
+    UNIQUE GENES TRINITY ~~~~~~~~~~~~~>      11449
+    UNIQUE GENES SPADES55 ~~~~~~~~~~~~>      12060
+    UNIQUE GENES SPADES75 ~~~~~~~~~~~~>      10900
+    UNIQUE GENES TRANSABYSS ~~~~~~~~~~>      11098
+    READS MAPPED AS PROPER PAIRS ~~~~~>      93.87% 	
 
 
 ### 3. Quantify Reads - Run Salmon
@@ -73,7 +73,7 @@ winners_R2 = ['STG_1_DP-18.R2', 'STG_2_DP-20.R2', 'STG_4_DP-28.R2', 'STG_3_DP-26
    `sbatch 3.B_salmon.slurm`  
    
    Output: You will get directories for each sample - here I secure copied all of my output directories to my desktop and placed them in a folder named mapping. This will be used with EdgeR to find DEGs and when making heatmaps in R towards the end of this workflow. 
-   
+  
 ### 4. Run TransDecoder 
    Next we need to translate our assembly into protien space so we can use our assembly in Orthofinder in the next step. We will also have to alter the headers again keeping only valuable information and then we will reduce the assembly by using cd-hit to get rid of duplicates. For more info on transdecoder go here: https://github.com/TransDecoder/TransDecoder/wiki.  
    
