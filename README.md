@@ -1,4 +1,4 @@
-# Hydractinia_phototaxis
+# Overview of Hydractinia phototaxis manuscript Repository
 
 This repository contains the analyses for the manuscript: Phototactic preference and its genetic basis in the planulae of the colonial Hydrozoan _Hydractinia symbiolongicarpus_ (in progress). This includes the behavioral analysis code, the developmental transcriptome and gene expression analysis workflow, the STRING analysis workflow, and the design of RNA FISH probes.
 
@@ -9,6 +9,7 @@ The Hydractinia_Behavior_Analysis folder contains the R scripts and data used fo
 The STRING_analysis folder contains the workflow for the STRING analysis for three gene sets.
 
 Lastly, the RNA_FISH_Probe_Design folder contains the workflow for generating RNA FISH probes.
+
 
 
 _We are following a workflow we previously developed for the transcriptome analysis and design of RNA FISH probes - this can be found in my Actinula_paper repository_ (https://github.com/sjb1061/Actinula_Paper) for the following manuscript: https://onlinelibrary.wiley.com/doi/full/10.1111/mec.16968 
