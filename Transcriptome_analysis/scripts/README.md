@@ -1,1 +1,1 @@
-This Dir contains all scripts for the transcriptome analysis 
+This dir contains all scripts for the transcriptome analysis. We are following the same workflow we previously developed for the transcriptome analysis which can be found in my Actinula_paper repository (https://github.com/sjb1061/Actinula_Paper).
