@@ -5,6 +5,7 @@ This dir contains a dir with all scripts and a file with the step by step instru
 Note: 
 We changed the names of our read files when we uploaded our reads to SRA. Below is the name change information.(SRA Accesion: PRJNA1046120 )
 ```
+SRA name ---> Prevoius Name
 Hs_Day_1_Rep1 --> STG_1_DP-17
 Hs_Day_1_Rep2 --> STG_1_DP-18
 Hs_Day_1_Rep3 --> STG_1_DP-23
