@@ -12,6 +12,6 @@ Lastly, the RNA_FISH_Probe_Design folder contains the workflow for generating RN
 
 
 
-_We are following a workflow we previously developed for the transcriptome analysis and design of RNA FISH probes - this can be found in my Actinula_paper repository_ (https://github.com/sjb1061/Actinula_Paper) for the following manuscript: https://onlinelibrary.wiley.com/doi/full/10.1111/mec.16968 
+> _We are following a workflow we previously developed for the transcriptome analysis and design of RNA FISH probes - this can be found in my Actinula_paper repository_ (https://github.com/sjb1061/Actinula_Paper) for the following manuscript: https://onlinelibrary.wiley.com/doi/full/10.1111/mec.16968 
 
-_Note: an incomplete previous version of this repository can be found on my previous GitHub page https://github.com/sjb1061/Hydractinia_phototaxis_paper_
+> _Note: an incomplete previous version of this repository can be found on my previous GitHub page https://github.com/sjb1061/Hydractinia_phototaxis_paper_
