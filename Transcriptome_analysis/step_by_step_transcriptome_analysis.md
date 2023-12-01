@@ -1,6 +1,6 @@
 # Step by Step Methods of Hydractinia Planula Transcriptome Analysis and Outputs
 
-This file is the step by step instructions of our Transcriptome analysis. You will find the scripts used and an explanation of what they do as well as outputs. I am following the Transcriptome workflow we previously developed, which can be found in my Actinula_paper repository.
+This file is the step by step instructions of our Transcriptome analysis. You will find the scripts used and an explanation of what they do as well as outputs. I am following the Transcriptome workflow we previously developed, which can be found in my Actinula_paper repository (https://github.com/sjb1061/Actinula_Paper). The raw reads can be found in the SRA at accession: PRJNA1046120
 
 ### 1. Prep Reads for Transcriptome Assembly
 We sequenced planulae larvae over 4 developmental days: Day 1, Day 2, Day 3 (when known to be phototactic), and Day 4. We have 3 replicates for each of the 4 developmental Days (we will call stages here). The first step of our developmental transcriptome assembly is to prepare our reads for assembling a reference transcriptome. Here in this step you can either run the full cohesive script: 1_Full_Ref_Transcriptome_prep.py or run it as 2 scripts (1_steps_1-3a_v3.py and 1_steps_3b-4b.py) but with running it as 2 scripts you have to hardcode a collection in the second script (I would recommend running just the cohesive script which is what I demonstrate below).
